@@ -6,10 +6,14 @@ Semantic Segmentation Research on ADE20k Dataset
 3. tensorpack
 4. opencv-python
 
-Download ADE20k dataset from [here](http://data.csail.mit.edu/places/ADEchallenge/ADEChallengeData2016.zip)
-Download pretrained backbone model from [here](https://github.com/tensorflow/models/tree/master/research/slim)
+Download ADE20k dataset from [here](http://data.csail.mit.edu/places/ADEchallenge/ADEChallengeData2016.zip).
+
+Download pretrained backbone model from [here](https://github.com/tensorflow/models/tree/master/research/slim).
+
 You can set most things at main.py, below 'if __name__ == '__main__''.
+
 Change model used at 'build' function, at main.py.
+
 After setting, run
 ```
 python main.py
