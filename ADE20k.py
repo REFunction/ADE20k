@@ -51,6 +51,7 @@ class ADE20k:
             image_path, label_path = self.path_queue.get()
             image = cv2.imread(image_path)
             label = cv2.imread(label_path, cv2.IMREAD_GRAYSCALE)
+            # label = label - 1 # 151 -> 150
 
             if self.flip and random.random() > 0.5:
                 image = cv2.flip(image, 1)
