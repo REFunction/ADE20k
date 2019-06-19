@@ -1,14 +1,17 @@
 # ADE20k
 Semantic Segmentation Research on ADE20k Dataset
-
-## How can I set the path of ADE20k dataset?
-At main.py, 'data_path' of model.train.
-## How can I set the pretrained path?
-At backbones.py, 'pretrained_path'.
-## How can I set which model will be used?
-At main.py, Model->build. Import from net_models and use it here.
-## How can I set hyper-parameters or other things?
-At main.py, model.train and model.eval. Just set parameters of them.
+## Requirements
+You should install following python packages.
+1. tensorflow 1.x
+2. tensorpack
+3. opencv-python
+## Dataset Preparation
+Download ADE20k dataset from [here](http://data.csail.mit.edu/places/ADEchallenge/ADEChallengeData2016.zip)
+## Pretrained Model Preparation
+Download pretrained backbone model from [here](https://github.com/tensorflow/models/tree/master/research/slim)
+## Other Tips
+You can set most things at main.py, below 'if __name__ == '__main__''.
+Change model used at 'build' function, at main.py.
 ## Could you give a result or a trained model?
 No, I am training and exploring, welcome to communicate in 'Issues'.
 
